@@ -1,0 +1,124 @@
+<!--
+ * @Date: 2024-04-08 11:51:55
+ * @LastEditors: ThetisEliza wxf199601@gmail.com
+ * @LastEditTime: 2024-04-18 14:06:51
+ * @FilePath: \vue-tute\index.html
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue</title>
+  </head>
+  <!-- <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body> -->
+  <h1>
+    Ernie-Bot
+  </h1>
+  <p>
+    Ernie-bot abstract
+  </p>
+  <div class="outer">
+    <!-- This is div outer -->
+    <div id="div-1" class="inner">
+      This is div inner 1
+        <div>
+          <button class="newline-button" onclick="hide()">
+            Hide me
+          </button>
+        </div>
+        
+    </div>
+    <div id="div-2" class="inner">
+      This is div inner 2
+      <div>
+        <button class="newline-button" onclick="makeInvisible()">
+          makeInvisible me
+        </button>
+      </div>
+    </div>
+    <div id="div-3" class="inner">
+      This is div inner 3
+    </div>
+  </div>
+<style>
+* {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #242424;
+  overflow: visible;
+}
+
+h1 {
+  color: lightcyan;
+  text-align: center;
+}
+
+p {
+  color: beige;
+  font-size: 20px;
+  text-align: center;
+}
+
+.outer {
+  color: beige;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(170, 135, 170);
+  border-radius: 10px;
+  max-width: 500px;
+  padding: 50% 10%;
+  
+}
+
+.inner {
+  color: beige;
+  font-size: 15px;
+  text-align: center;
+  background-color: rgb(104, 71, 163);
+  width: 80%;
+  border-radius: 10px;
+  margin: 5% auto;
+  padding: 20px;
+}
+
+
+
+#div-1 {
+  height: 70px;
+  text-shadow: 2px 2px 5px lightgoldenrodyellow;
+}
+
+#div-2 {
+  height: 80px;
+}
+
+#div-3 {
+  height: 90px;
+}
+
+.oc-button {
+  background-color: pink;
+  border: none;
+  width: 20%;
+  position: centered;
+}
+</style>
+
+<script>
+  function hide() {
+    document.getElementById("div-1").style.display = "none"
+  }
+
+  function makeInvisible() {
+    document.getElementById("div-2").style.visibility = "hidden";
+  }
+</script>
+</html>
